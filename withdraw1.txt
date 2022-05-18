@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class withdraw1
+{
+	static void  input(int amount)
+	{
+		if(amount<500)
+			try
+		{
+			throw new Exception();	
+		}
+		catch(Exception e)
+		{
+			System.out.println("entr the amount greater thn 500");
+		}
+		else
+		{
+			System.out.println("take the money"+amount);
+	}
+	}
+	public static void main(String[]args)
+	{
+		Scanner s =new Scanner(System.in);
+		System.out.println("entr the amount");
+		int amount=s.nextInt();
+		input(amount);
+	}
+		
+}
+	
+
